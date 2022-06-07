@@ -106,35 +106,35 @@ include("auth_session.php");
             </div>
             <div class="new-students">
                 <div class="title">
-                    <h2>New Students</h2>
+                    <h2>Teacher List</h2>
                     <a href="#" class="btn">View All</a>
                 </div>
                 <table>
                     <tr>
                         <th>Profile</th>
                         <th>Name</th>
-                        <th>option</th>
+                        <th>Section</th>
+                        <th>Action</th>
                     </tr>
-                    <tr>
+                    <?php
+        
+        $sql="select * from new_enroll";
+        $result=mysqli_query($con,$sql);
+        ///echo $wid;
+          if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) { ?>
+                        <tr>
                         <td><img src="./images/user.png" alt=""></td>
-                        <td>John Steve Doe</td>
-                        <td><img src="./images/info.png" alt=""></td>
+                        <td><?php echo $row['teacher']?> </td>
+                        <td><?php echo $row['section']?></td>
+                        <td>View </td>
                     </tr>
-                    <tr>
-                        <td><img src="./images/user.png" alt=""></td>
-                        <td>John Steve Doe</td>
-                        <td><img src="./images/info.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td><img src="./images/user.png" alt=""></td>
-                        <td>John Steve Doe</td>
-                        <td><img src="./images/info.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td><img src="./images/user.png" alt=""></td>
-                        <td>John Steve Doe</td>
-                        <td><img src="./images/info.png" alt=""></td>
-                    </tr>
+                        <?php
+ } 
+}?>
+
+                    
+                  
 
                 </table>
             </div>
