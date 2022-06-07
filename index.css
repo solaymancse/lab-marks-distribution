@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+.navbar {
+    padding: 10px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar {
+    padding: 0 300px;
+}
+
+.navbarNav {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    height: 100vh;
+    width: 100%;
+}
+
+.topmain {
+    width: 100%;
+    position: relative;
+
+}
+
+.logdiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.logdiv h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logdiv a {
+
+    color: #333;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: aquamarine;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+.brand-name a {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.brand-name a>span {
+    color: #fff;
+    background-color: #F05462;
+    padding: 5px;
+}
+
+/*login*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+::selection {
+    background: #4158d0;
+    color: #fff;
+}
+
+.wrapper {
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #4158d0;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 0%;
+    font-size: 16px;
+    color: #4158d0;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+form .content {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form .content .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .content input {
+    width: 15px;
+    height: 15px;
+    background: red;
+}
+
+form .content label {
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+}
+
+form .content .pass-link {
+    color: "";
+}
+
+form .field input[type="submit"] {
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+form .signup-link {
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .pass-link a,
+form .signup-link a {
+    color: #4158d0;
+    text-decoration: none;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/*dashboard*/
+
+
+.user h1{
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    color: #444;
+}
+
+h3 {
+    color: #999;
+}
+
+.btn {
+    background: #f05462;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #f05462;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+table {
+    padding: 10px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.side-menu {
+    position: fixed;
+    background: #f05462;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.side-menu ul {
+    margin-top: 100px;
+
+}
+.side-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    
+
+}
+
+.side-menu li {
+    font-size: 16px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.side-menu li>span {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.side-menu li:hover {
+    background: white;
+    color: #f05462;
+    cursor: pointer;
+}
+
+.containerbox {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.containerbox .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.containerbox .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.containerbox .header .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.containerbox .header .nav .search input[type=text] {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+}
+
+.containerbox .header .nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerbox .header .nav .search button img {
+    width: 30px;
+    height: 30px;
+}
+
+.containerbox .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerbox .header .nav .user img {
+    width: 40px;
+    height: 40px;
+}
+
+.containerbox .header .nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.containerbox .header .nav .user .img-case img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.containerbox .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+
+.containerbox .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containerbox .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerbox .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.containerbox .content .content-2 .recent-payments {
+    padding: 0 20px;
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.containerbox .content .content-2 .new-students {
+    padding: 20px;
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.containerbox .content .content-2 .new-students table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+
+    .side-menu {
+        align-items: center;
+    }
+
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .side-menu li:hover {
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+
+    .containerbox .content .cards {
+        justify-content: center;
+    }
+
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .containerbox .content .content-2 .recent-payments table th:nth-child(2),
+    .containerbox .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    }
+}
+
+/*add */
+
+.maindiv {
+    padding: 20px 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.maindiv form {
+    display: flex;
+    flex-direction: column;
+}
+.maindiv form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: .5px solid #333;
+}
+.maindiv form>:nth-child(9) {
+   background-color: #4158d0;
+   color: #fff;
+   border: none;
+   margin-top: 10px;
+}
+
+.confirmation{
+    background-color: #59B259;
+    width: 420px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    
+    padding: 1px 0;
+}
+.confirmation h3{
+    color: #fff;
+}
+.confirmation p a{
+    color: #fff;
+}
+.fail{
+    background-color: red;
+    width: 420px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    
+    padding: 1px 0;
+}
+.fail h3{
+    color: #fff;
+}
+.fail p a{
+    color: #fff;
+}
+.topDiv {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-bottom: -150px;
+    
+    
+}
+.topDiv a{
+   
+    margin-left: 10px;
+
+
+    
+}
+.action{
+    background-color: red;
+}
